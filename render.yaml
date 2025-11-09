@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: my-background-bot
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    plan: starter
+    autoDeploy: true
+
