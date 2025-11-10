@@ -55,7 +55,7 @@ bot.on('callback_query', async (query) => {
   // ✅ NO £500 → ASK ABOUT STEP 3 SETUP
   if (data === "no_500") {
     await sendStep(chatId,
-      "No worries! Have you already set up and verified your trading account (STEP 3)?",
+      "No worries! Have you already set up and verified your Puprime trading account?",
       [
         [{ text: "❌ No", url: "https://t.me/PuprimeAccountSetup" }],
         [{ text: "I already have an account", url: "https://t.me/ExistingPuprimeAccount" }],
@@ -139,7 +139,7 @@ if (data === "access_free_trades") {
       `📝 Mentorship Plan – Best for Beginners\n\nIf you're new to trading or copy/paste signals and want to build confidence with guidance and support, this package is for you.\n\n✅ What you get:\n- Access to our VIP Trade Channel\n- Real-time updates on trades and price action\n- Video education on account setup, copy/paste techniques and strategies, risk management techniques and importance\n- Trading psychology support (90% of success)\n- 2x private mentorship Zoom calls per month\nSession 1:live account strategy\nSession 2: evaluating your trading, assessing areas for improvement and tweaks in technique and psychology to improve your trading\n\nThis plan helps you learn while earning ✅\n\nDo you think the Mentorship Plan suits you best?`,
       [
         [{ text: "✅ Yes, I want this plan", callback_data: "buy_beginner" }],
-        [{ text: "▶️ Watch plan video", url: "https://youtu.be/BjCHMptTbwI" }],
+        [{ text: "🎥 Watch plan video", url: "https://youtu.be/BjCHMptTbwI" }],
         [{ text: "💬 Speak to support", url: "https://t.me/thegoldroomsupport" }],
         [{ text: "🔙 Back", callback_data: "not_sure" }]
       ]
@@ -153,7 +153,7 @@ if (data === "access_free_trades") {
       `⚙️ Education Plan – For Developing Traders\n\nYou have some general experience with signals, but have never received any education or guidance on how to copy/paste for consistent profitability. If you need guidance on account setup, how to copy/paste, risk management and psychology, but don't want any personal mentorship, this package is for you!\n\n✅ What you get:\n- VIP Trades access\n- Trade breakdowns + live price action insights\n- Account growth systems\n- Advanced risk management\n- Trade psychology mastery\n\nThis plan helps you go from inconsistent to confidently profitable 📈\n\nIs the Education Plan right for you?`,
       [
         [{ text: "✅ Yes, I want this plan", callback_data: "buy_intermediate" }],
-        [{ text: "▶️ Watch plan video", url: "https://youtu.be/-KDi-PP1fbg" }],
+        [{ text: "🎥 Watch plan video", url: "https://youtu.be/KxUusCxW2bY" }],
         [{ text: "💬 Speak to support", url: "https://t.me/thegoldroomsupport" }],
         [{ text: "🔙 Back", callback_data: "not_sure" }]
       ]
@@ -167,7 +167,7 @@ if (data === "access_free_trades") {
       `🧠 Advanced Plan – Signals Only\n\nAlready confident with trading execution and just want high win-rate, accurate daily trade signals?\n\n✅ What you get:\n- VIP Trades Channel only\n- High-accuracy trade setups daily\n- Real-time trade management updates\n- Fast execution notifications\n- Market structure & analysis breakdowns\n\nThis plan is for serious traders only who want results without mentorship.\n\nIs the Advanced Plan right for you?`,
       [
         [{ text: "✅ Yes, I want this plan", callback_data: "buy_advanced" }],
-        [{ text: "▶️ Watch plan video", url: "https://youtu.be/QSFpDbRDxSk" }],
+        [{ text: "🎥 Watch plan video", url: "https://youtu.be/QSFpDbRDxSk" }],
         [{ text: "💬 Speak to support", url: "https://t.me/thegoldroomsupport" }],
         [{ text: "🔙 Back", callback_data: "not_sure" }]
       ]
@@ -180,7 +180,7 @@ if (data === "access_free_trades") {
     await sendStep(chatId,
       "You've selected Beginner.\n\nWant to join now or learn more first?",
       [
-        [{ text: "ℹ️ Plan Overview", callback_data: "learn_beginner" }],
+        [{ text: "📌 Plan Overview", callback_data: "learn_beginner" }],
         [{ text: "✅ Join Now (£250/month)", callback_data: "buy_beginner" }],
         [{ text: "🔙 Back", callback_data: "access_vip" }]
       ]
@@ -192,7 +192,7 @@ if (data === "access_free_trades") {
     await sendStep(chatId,
       "You've selected Intermediate.\n\nWould you like full plan details before joining?",
       [
-        [{ text: "ℹ️ Plan Overview", callback_data: "learn_intermediate" }],
+        [{ text: "📌 Plan Overview", callback_data: "learn_intermediate" }],
         [{ text: "✅ Join Now (£200/month)", callback_data: "buy_intermediate" }],
         [{ text: "🔙 Back", callback_data: "access_vip" }]
       ]
@@ -204,7 +204,7 @@ if (data === "access_free_trades") {
     await sendStep(chatId,
       "You've selected Advanced.\n\nWould you like full plan details before joining?",
       [
-        [{ text: "ℹ️ Plan Overview", callback_data: "learn_advanced" }],
+        [{ text: "📌 Plan Overview", callback_data: "learn_advanced" }],
         [{ text: "✅ Join Now (£150/month)", callback_data: "buy_advanced" }],
         [{ text: "🔙 Back", callback_data: "access_vip" }]
       ]
