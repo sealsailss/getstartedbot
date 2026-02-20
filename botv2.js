@@ -69,9 +69,9 @@ bot.on('callback_query', async (query) => {
   // ✅ RESULTS CHANNEL PATH (replaces Free Trades)
 if (data === "access_free_trades") {
   await sendStep(chatId,
-    "You're not ready for VIP yet — that's fine ✅\n\nStay connected and get regular updates on our daily trade results as your capital is too low to join VIP!",
+    "You dont qualify for VIP yet — that's fine ✅\n\nYou can access our Free Trades Channel instead! Just deposit minimum £350 into your Puprime trading account & send us a screesnhot of your deposit, to get started.",
     [
-      [{ text: "📊 View Results Channel", url: "https://t.me/+IP-ZztKHbUFkNTVk" }],
+      [{ text: "📊 I have made my Deposit", url: "https://t.me/thegoldroomsupport?text=Hey!%20I've%20set%20up%20my%20Puprime%20account%20and%20deposited%20%C2%A3350.%20Pls%20add%20me%20to%20the%20Free%20Trades%20Channel." }],
       [{ text: "💬 Speak to Support", url: "https://t.me/thegoldroomsupport" }],
       [{ text: "🔙 Back", callback_data: "no_500" }]
     ]
