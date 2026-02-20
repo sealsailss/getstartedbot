@@ -40,7 +40,7 @@ bot.on('message', async (msg) => {
     chatId,
     `Hey ${firstName} 👋\n\nWelcome! Would be happy to give you access to our VIP trade membership. Before we get started, I just need to check one thing.\n\nDo you have a minimum of £500 available to trade with?\n\nWe ask this so we can recommend the best option for you.`,
     [
-      [{ text: "✅ Yes, I have £500+", callback_data: "has_500" }],
+      [{ text: "✅ Yes, I have minimum £1000+", callback_data: "has_500" }],
       [{ text: "❌ No, I don’t", callback_data: "no_500" }]
     ]
   );
@@ -98,7 +98,7 @@ if (data === "access_free_trades") {
     await sendStep(chatId,
       "No problem! Let's start again ✅\n\nDo you currently have at least £500 available to trade with?",
       [
-        [{ text: "✅ Yes, I have £500+", callback_data: "has_500" }],
+        [{ text: "✅ Yes, I have minimum £1000+", callback_data: "has_500" }],
         [{ text: "❌ No, I don’t", callback_data: "no_500" }]
       ]
     );
