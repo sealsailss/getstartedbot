@@ -38,7 +38,7 @@ bot.on('message', async (msg) => {
 
   await sendStep(
     chatId,
-    `Hey ${firstName} 👋\n\nWelcome! Would be happy to give you access to our VIP trade membership. Before we get started, I just need to check one thing.\n\nDo you have a minimum of £500 available to trade with?\n\nWe ask this so we can recommend the best option for you.`,
+    `Hey ${firstName} 👋\n\nWelcome! Would be happy to give you access to our VIP trade membership. Before we get started, I just need to check one thing.\n\nDo you have a minimum of £1000 available to trade with?\n\nWe ask this so we can recommend the best option for you.`,
     [
       [{ text: "✅ Yes, I have minimum £1000+", callback_data: "has_500" }],
       [{ text: "❌ No, I don’t", callback_data: "no_500" }]
@@ -69,7 +69,7 @@ bot.on('callback_query', async (query) => {
   // ✅ RESULTS CHANNEL PATH (replaces Free Trades)
 if (data === "access_free_trades") {
   await sendStep(chatId,
-    "You're not ready for VIP yet — that's fine ✅\n\nStay connected and get regular updates on our trade results whilst you gain the capital to join VIP!",
+    "You're not ready for VIP yet — that's fine ✅\n\nStay connected and get regular updates on our daily trade results as your capital is too low to join VIP!",
     [
       [{ text: "📊 View Results Channel", url: "https://t.me/+IP-ZztKHbUFkNTVk" }],
       [{ text: "💬 Speak to Support", url: "https://t.me/thegoldroomsupport" }],
@@ -96,7 +96,7 @@ if (data === "access_free_trades") {
   // ✅ BACK TO START
   if (data === "go_start") {
     await sendStep(chatId,
-      "No problem! Let's start again ✅\n\nDo you currently have at least £500 available to trade with?",
+      "No problem! Let's start again ✅\n\nDo you currently have at least £1000 available to trade with?",
       [
         [{ text: "✅ Yes, I have minimum £1000+", callback_data: "has_500" }],
         [{ text: "❌ No, I don’t", callback_data: "no_500" }]
